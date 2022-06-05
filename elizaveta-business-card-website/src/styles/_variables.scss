@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;500;600&display=swap");
+
+//TYPOGRAPHY=========================================================//
+
+$text-font: "Bad Script", sans-serif;
+$title-font: "Caveat", sans-serif;
+$main-title-font-size: 45px;
+$main-text-font-size: 20px;
+$text-font-size: 20px;
+$title-font-size: 26px;
+$header-font-size: 37px;
+
+//COLORS==========================================================//
+
+$text-color: #000000;
+$header-color: #000000;
+$main-buttons-bgcolor: #f9d19a;
+$buttons-color: #ffffff;
+$content-boxes-bgcolor: #ffffff;
+$body-bgcolor: rgba(198, 170, 167, 0.45);
+
+/*========== Breakpoings ==========*/
+@mixin breakpoint($point) {
+  @if $point==xl {
+    // 1120px
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point==lg {
+    // 1024px
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point==lg-only {
+    // 1023px
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $point==md {
+    // 768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  } @else if $point==md-only {
+    // 767px
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point==sm {
+    // 600px
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point==sm-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $point==xs {
+    @media (min-width: 450px) {
+      @content;
+    }
+  } @else if $point==xs-only {
+    @media (max-width: 449px) {
+      @content;
+    }
+  }
+}

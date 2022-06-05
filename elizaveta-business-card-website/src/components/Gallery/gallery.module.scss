@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.gallery__wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.gallery__spinner{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}

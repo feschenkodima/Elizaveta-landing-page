@@ -1,0 +1,7 @@
+{
+  "BASE_URL": "http://localhost:4001/api",
+  "GALLERY": "/gallery",
+  "CONTACTS": "/contacts",
+  "TESMONIALS": "/tesmonials",
+  "PRICES": "/prices"
+}

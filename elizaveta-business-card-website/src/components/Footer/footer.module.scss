@@ -1,0 +1,89 @@
+@import "../../styles/variables";
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: $text-color;
+    align-items: center;
+    color: $buttons-color;
+}
+.footer__navbar_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.footer__navbar_buttons, .footer__navbar_social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.footer__navbar_social{
+    box-sizing: border-box;
+    & li{
+        font-size: 30px;
+        & svg:hover{
+            animation: imageHover .1s forwards;
+        }
+    }
+    &__tg{
+        color: rgb(58, 58, 248);
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    &__viber{
+        color: #fff;
+        border-radius: 9px;
+        background-color: rgb(204, 46, 252);
+    }
+    &__inst{
+        background: linear-gradient(#e66465, #9198e5);
+        border-radius: 9px;
+    }
+}
+.footer__navbar_buttons{
+    & li{
+        text-decoration: none;
+            color: $buttons-color;
+            font-family: $title-font;
+            font-size: $header-font-size;
+            &:hover{
+                animation: headerButtonsRotate .1s forwards;
+            }
+            & a{
+                color: $buttons-color;
+            }
+    }
+}
+.footer__logo{
+    width: 90px;
+        & img{
+            border-radius: 20px;
+            align-items: center;
+            margin-top: 10px;
+        }
+}
+
+@keyframes headerButtonsRotate {
+    50%{
+    transform: scale(1);
+    
+    }100%{
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+}
+
+@keyframes imageHover {
+
+    0%{
+        transform: scale(1);
+
+    }
+    100%{
+        box-shadow: 2px 2px 2px $main-buttons-bgcolor;
+        transform: scale(1.1);
+    }
+}

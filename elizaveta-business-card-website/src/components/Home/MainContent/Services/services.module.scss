@@ -1,0 +1,19 @@
+@import "../../../../styles/variables";
+
+.services__wrapper{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content__title{
+    font-size: $title-font-size;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $main-buttons-bgcolor;
+    max-width: 10%;
+    text-align: center;
+    border: 1px solid $content-boxes-bgcolor;
+    border-radius: 30px;
+}

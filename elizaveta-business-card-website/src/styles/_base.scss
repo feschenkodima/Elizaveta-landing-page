@@ -1,0 +1,52 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: $text-font;
+}
+
+body{
+    margin: 0;
+    background-color: $body-bgcolor;
+    color: $text-color;
+    transition: .2s;
+    background-image: url(https://res.cloudinary.com/dgzzsonyf/image/upload/a_180/v1650032828/Vector_bottom_gsyskp.png), url(https://res.cloudinary.com/dgzzsonyf/image/upload/v1650032828/Vector_bottom_gsyskp.png);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1,h2,h3{
+    color: $text-color;  
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

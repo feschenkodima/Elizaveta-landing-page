@@ -1,0 +1,14 @@
+.scrollTop {
+  position: fixed;
+  right: 4%;
+  bottom: 100px;
+  height: 20px;
+  font-size: 4rem;
+  z-index: 1;
+  cursor: pointer;
+  color: palevioletred;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
